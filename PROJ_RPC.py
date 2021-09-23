@@ -5,10 +5,11 @@ print ("Welcome to the game!")
 
 
 var=("Rock", "Paper", "Scissors")
-com=var[randint(0,2)]
+
 
 c=1
 while c>0:
+    com=var[randint(0,2)]
     user=input("Enter your Move: ")   
     if user==("exit"):
         break 
@@ -25,6 +26,8 @@ while c>0:
             print ("Computer Wins!")
         else:
             print ("invalid input")    
+            print ("____________________")
+            print ("type 'exit' to QUIT")   
         break
 
     while com==var[1]:
@@ -41,6 +44,7 @@ while c>0:
             print ("invalid input") 
             print ("____________________")
             print ("type 'exit' to QUIT")   
+        
         break
 
     while com==var[2]:
@@ -55,6 +59,9 @@ while c>0:
             print ("Computer Wins!")
         else:
             print ("invalid input")    
+            print ("____________________")
+            print ("type 'exit' to QUIT")   
+        
         break            
 
 
